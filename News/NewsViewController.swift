@@ -27,7 +27,6 @@ class NewsViewController: UIViewController {
 
 extension NewsViewController: ArticleModelProtocol {
     func articlesRetrieved(_ articles: [Articles]) {
-        print("articles came back!")
         self.articles = articles
         tableView.reloadData()
     }

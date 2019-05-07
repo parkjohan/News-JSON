@@ -75,40 +75,6 @@
             </objects>
             <point key="canvasLocation" x="823" y="128"/>
         </scene>
-        <!--Detail View Controller-->
-        <scene sceneID="rSj-Nl-gMz">
-            <objects>
-                <viewController id="kYA-fh-Bem" customClass="DetailViewController" customModule="News" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="a9C-Uy-3AP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rwa-bS-XZU">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="rwa-bS-XZU" firstAttribute="top" secondItem="Nl9-kv-vqM" secondAttribute="top" id="2gg-ea-UM8"/>
-                            <constraint firstItem="Nl9-kv-vqM" firstAttribute="trailing" secondItem="rwa-bS-XZU" secondAttribute="trailing" id="IXW-XT-o2P"/>
-                            <constraint firstItem="Nl9-kv-vqM" firstAttribute="bottom" secondItem="rwa-bS-XZU" secondAttribute="bottom" id="Ion-6R-GQK"/>
-                            <constraint firstItem="rwa-bS-XZU" firstAttribute="leading" secondItem="Nl9-kv-vqM" secondAttribute="leading" id="tJj-oj-7uH"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="Nl9-kv-vqM"/>
-                    </view>
-                    <connections>
-                        <outlet property="webView" destination="rwa-bS-XZU" id="gEW-21-uvE"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="S3O-qw-7x7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1517" y="128"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="uOe-7f-hMu">
             <objects>

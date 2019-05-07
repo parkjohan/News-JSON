@@ -18,9 +18,33 @@ class ArticleModel {
     var delegate: ArticleModelProtocol?
     
     func getArticles() {
-        // Fires off request to retrieve API
         
-        // When it returns, parse the JSON and send results back
-        delegate?.articlesRetrieved([Articles]())
+        let urlString = "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=018f69dd3e7f467996bb8bd648d7739e"
+        let url = URL(string: urlString)
+        
+        guard url != nil else { return print("could not load url")}
+        
+        let session = URLSession.shared
+        let dataTask = session.dataTask(with: url!) { (data, response, error) in
+            
+            // If there are no errors and there is data
+            if error == nil && data != nil {
+                do {
+                    // Decode JSON data into Structs
+                    let decoder = JSONDecoder()
+                    let result = try decoder.decode(ArticleService.self, from: data!)
+                    
+                    // Do this on the main thread
+                    DispatchQueue.main.async {
+                        self.delegate?.articlesRetrieved(result.articles)
+                    }
+                }
+                catch {
+                    print("Could not decode data")
+                    return
+                }
+            }
+        }
+        dataTask.resume()
     }
 }
