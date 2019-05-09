@@ -20,12 +20,14 @@ class NewsViewController: UIViewController {
         
         tableView.dataSource = self
         tableView.delegate = self
+        
         model.delegate = self
         model.getArticles()
     }
 }
 
 extension NewsViewController: ArticleModelProtocol {
+    
     func articlesRetrieved(_ articles: [Articles]) {
         self.articles = articles
         tableView.reloadData()
@@ -39,7 +41,10 @@ extension NewsViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "article cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "article cell", for: indexPath) as! NewsTableViewCell
+        let article = articles[indexPath.row]
+        
+        cell.displayArticle(article)
         
         return cell
     }

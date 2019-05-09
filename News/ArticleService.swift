@@ -11,5 +11,5 @@ import Foundation
 struct ArticleService: Decodable {
     
     var totalResults:Int?
-    var articles:[Articles]
+    var articles:[Articles]?
 }

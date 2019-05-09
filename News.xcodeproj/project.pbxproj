@@ -16,6 +16,7 @@
 		98808E6C22820C260068AE13 /* ArticleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98808E6B22820C260068AE13 /* ArticleService.swift */; };
 		98808E6E22820C9A0068AE13 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98808E6D22820C9A0068AE13 /* ArticleModel.swift */; };
 		98808E7022821D700068AE13 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98808E6F22821D700068AE13 /* DetailViewController.swift */; };
+		98808E72228237230068AE13 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98808E71228237230068AE13 /* NewsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		98808E6B22820C260068AE13 /* ArticleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleService.swift; sourceTree = "<group>"; };
 		98808E6D22820C9A0068AE13 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
 		98808E6F22821D700068AE13 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		98808E71228237230068AE13 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				98808E57228209B50068AE13 /* AppDelegate.swift */,
 				98808E6F22821D700068AE13 /* DetailViewController.swift */,
 				98808E59228209B50068AE13 /* NewsViewController.swift */,
+				98808E71228237230068AE13 /* NewsTableViewCell.swift */,
 				98808E6D22820C9A0068AE13 /* ArticleModel.swift */,
 				98808E6B22820C260068AE13 /* ArticleService.swift */,
 				98808E69228209F10068AE13 /* Articles.swift */,
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98808E6C22820C260068AE13 /* ArticleService.swift in Sources */,
+				98808E72228237230068AE13 /* NewsTableViewCell.swift in Sources */,
 				98808E6E22820C9A0068AE13 /* ArticleModel.swift in Sources */,
 				98808E5A228209B50068AE13 /* NewsViewController.swift in Sources */,
 				98808E7022821D700068AE13 /* DetailViewController.swift in Sources */,

@@ -36,11 +36,11 @@ class ArticleModel {
                     
                     // Do this on the main thread
                     DispatchQueue.main.async {
-                        self.delegate?.articlesRetrieved(result.articles)
+                        self.delegate?.articlesRetrieved(result.articles!)
                     }
                 }
                 catch {
-                    print("Could not decode data")
+                    print("Could not decode data. \(error)")
                     return
                 }
             }
