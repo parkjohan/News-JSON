@@ -65,18 +65,34 @@
 			isa = PBXGroup;
 			children = (
 				98808E57228209B50068AE13 /* AppDelegate.swift */,
-				98808E6F22821D700068AE13 /* DetailViewController.swift */,
-				98808E59228209B50068AE13 /* NewsViewController.swift */,
-				98808E71228237230068AE13 /* NewsTableViewCell.swift */,
-				98808E6D22820C9A0068AE13 /* ArticleModel.swift */,
-				98808E6B22820C260068AE13 /* ArticleService.swift */,
-				98808E69228209F10068AE13 /* Articles.swift */,
+				98808E732284E7E20068AE13 /* Controllers */,
+				98808E742284E7EE0068AE13 /* Models */,
 				98808E5B228209B50068AE13 /* Main.storyboard */,
 				98808E5E228209B70068AE13 /* Assets.xcassets */,
 				98808E60228209B70068AE13 /* LaunchScreen.storyboard */,
 				98808E63228209B70068AE13 /* Info.plist */,
 			);
 			path = News;
+			sourceTree = "<group>";
+		};
+		98808E732284E7E20068AE13 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				98808E6F22821D700068AE13 /* DetailViewController.swift */,
+				98808E59228209B50068AE13 /* NewsViewController.swift */,
+				98808E71228237230068AE13 /* NewsTableViewCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		98808E742284E7EE0068AE13 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				98808E6D22820C9A0068AE13 /* ArticleModel.swift */,
+				98808E6B22820C260068AE13 /* ArticleService.swift */,
+				98808E69228209F10068AE13 /* Articles.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

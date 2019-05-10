@@ -29,8 +29,15 @@ class NewsTableViewCell: UITableViewCell {
         articleToDisplay = article
         articleTitleLabel.text = articleToDisplay?.title!
         
+        // Create the url object
         let urlString = (articleToDisplay?.urlToImage)!
+        
         let url = URL(string: urlString)
+        
+        guard url != nil else {
+            print("Could not load url")
+            return
+        }
         
         // Get the session
         let session = URLSession.shared
@@ -41,9 +48,12 @@ class NewsTableViewCell: UITableViewCell {
             // Check for errors
             if error == nil && data != nil {
                 
-                // Set imageView with data
-                DispatchQueue.main.async {
-                    self.articleImageView.image = UIImage(data: data!)
+                if self.articleToDisplay?.urlToImage == urlString {
+                    
+                    // Set tableView image with retrieved  image data
+                    DispatchQueue.main.async {
+                        self.articleImageView.image = UIImage(data: data!)
+                    }
                 }
             }
         }

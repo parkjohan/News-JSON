@@ -79,6 +79,40 @@
             </objects>
             <point key="canvasLocation" x="823" y="128"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Z53-B4-uqg">
+            <objects>
+                <viewController id="GV2-uL-pXB" customClass="DetailViewController" customModule="News" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aJu-in-2y2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UyT-WP-cOo">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UyT-WP-cOo" firstAttribute="leading" secondItem="Fzo-42-NlP" secondAttribute="leading" id="Gii-1G-3ZC"/>
+                            <constraint firstItem="UyT-WP-cOo" firstAttribute="top" secondItem="Fzo-42-NlP" secondAttribute="top" id="Jap-FW-W6I"/>
+                            <constraint firstItem="Fzo-42-NlP" firstAttribute="bottom" secondItem="UyT-WP-cOo" secondAttribute="bottom" id="pWD-rF-SdW"/>
+                            <constraint firstItem="Fzo-42-NlP" firstAttribute="trailing" secondItem="UyT-WP-cOo" secondAttribute="trailing" id="yen-7s-F3q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Fzo-42-NlP"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="UyT-WP-cOo" id="YHy-Tt-n1h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="65w-Wc-RKM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1552" y="129"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="uOe-7f-hMu">
             <objects>
