@@ -17,6 +17,7 @@
 		98808E6E22820C9A0068AE13 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98808E6D22820C9A0068AE13 /* ArticleModel.swift */; };
 		98808E7022821D700068AE13 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98808E6F22821D700068AE13 /* DetailViewController.swift */; };
 		98808E72228237230068AE13 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98808E71228237230068AE13 /* NewsTableViewCell.swift */; };
+		98808E79228630310068AE13 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98808E78228630310068AE13 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		98808E6D22820C9A0068AE13 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
 		98808E6F22821D700068AE13 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		98808E71228237230068AE13 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		98808E78228630310068AE13 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98808E79228630310068AE13 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +53,7 @@
 			children = (
 				98808E56228209B50068AE13 /* News */,
 				98808E55228209B50068AE13 /* Products */,
+				98808E772286302F0068AE13 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +97,14 @@
 				98808E69228209F10068AE13 /* Articles.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		98808E772286302F0068AE13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98808E78228630310068AE13 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

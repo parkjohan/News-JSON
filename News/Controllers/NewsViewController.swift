@@ -24,6 +24,17 @@ class NewsViewController: UIViewController {
         model.delegate = self
         model.getArticles()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "detail vc" {
+            let destVC = segue.destination as! DetailViewController
+            let index = tableView.indexPathForSelectedRow
+            guard index != nil else {return print("index path not available")}
+            let article = articles[index!.row]
+            destVC.articleURL = article.url
+        }
+    }
 }
 
 extension NewsViewController: ArticleModelProtocol {
@@ -54,6 +65,9 @@ extension NewsViewController: UITableViewDataSource, UITableViewDelegate {
         print(selectedCell)
         
         // Transition to DetailVC and pass article that was selected
+        //let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        //let detailVC = storyboard.instantiateViewController(withIdentifier: "DetailVC")
+        //present(detailVC, animated: true, completion: nil)
     }
 }
 
